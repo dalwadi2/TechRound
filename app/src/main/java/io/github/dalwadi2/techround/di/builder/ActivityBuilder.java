@@ -17,12 +17,17 @@
 package io.github.dalwadi2.techround.di.builder;
 
 import dagger.Module;
+import dagger.android.ContributesAndroidInjector;
+import io.github.dalwadi2.techround.di.module.ListProductActivityModule;
+import io.github.dalwadi2.techround.view.activities.ListProductActivity;
 
 /**
  * Created by: Harsh Dalwadi - Senior Software Engineer
- * Created Date: 9/6/2017.
+ * Created Date: 22-09-2018
  */
 @Module
 public abstract class ActivityBuilder {
 
+    @ContributesAndroidInjector(modules = ListProductActivityModule.class)
+    abstract ListProductActivity bindListProductActivity();
 }

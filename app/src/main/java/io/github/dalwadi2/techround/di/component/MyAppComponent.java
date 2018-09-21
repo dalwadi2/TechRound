@@ -2,7 +2,6 @@ package io.github.dalwadi2.techround.di.component;
 
 import android.app.Application;
 
-
 import javax.inject.Singleton;
 
 import dagger.BindsInstance;
@@ -15,7 +14,7 @@ import io.github.dalwadi2.techround.di.module.AppModule;
 
 /**
  * Created by: Harsh Dalwadi - Senior Software Engineer
- * Created Date: 9/6/2017.
+ * Created Date: 22-09-2018
  */
 @Singleton
 @Component(modules = {AndroidSupportInjectionModule.class, AppModule.class, ActivityBuilder.class})

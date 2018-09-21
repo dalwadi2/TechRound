@@ -2,7 +2,6 @@ package io.github.dalwadi2.techround;
 
 import android.app.Activity;
 
-
 import dagger.android.AndroidInjector;
 import dagger.android.support.DaggerApplication;
 import io.github.dalwadi2.techround.di.component.DaggerMyAppComponent;
@@ -12,7 +11,7 @@ import timber.log.Timber;
 
 /**
  * Created by: Harsh Dalwadi - Senior Software Engineer
- * Created Date: 9/3/2017.
+ * Created Date: 22-09-2018
  */
 
 public class MyApp extends DaggerApplication {
@@ -34,7 +33,6 @@ public class MyApp extends DaggerApplication {
     @Override
     public void onCreate() {
         super.onCreate();
-//        Fabric.with(this, new Crashlytics());
         Timber.plant(new Timber.DebugTree());
     }
 }
